@@ -16,17 +16,43 @@ const cards = [
   "Girls drink 3",
 ];
 
-function draw() {
-  const random = Math.floor(Math.random() * cards.length);
-  const drawCard = cards[random];
-  const display = document.querySelector("#card");
-  console.log(drawCard);
-  display.innerHTML = `${drawCard}`;
-}
+// function draw() {
+//   // const random = Math.floor(Math.random() * cards.length);
+//   // const drawCard = cards[random];
+//   // const display = document.querySelector("#card");
+//   // // console.log(drawCard);
+//   // display.innerHTML = `${drawCard}`;
+//   // clickCount += 1;
+// }
 
-function setCards() {
-  const pax = document.querySelector("#paxNum").value;
+function setCards(numPax) {
+  let clickCount = 0;
+  const pax = numPax * 10;
+  let countPax = pax;
   console.log(pax);
+  const nextButton = document.querySelector("#next");
+  nextButton.addEventListener("click", function () {
+    const random = Math.floor(Math.random() * cards.length);
+    const drawCard = cards[random];
+    const display = document.querySelector("#card");
+    const countDown = document.querySelector("#countDown");
+    // console.log(drawCard);
+    display.innerHTML = `${drawCard}`;
+    clickCount += 1;
+    countPax -= 1;
+    console.log(clickCount);
+    countDown.innerHTML = `${countPax}`;
+
+    if (clickCount >= pax) {
+      // window.alert("Congratulations! Last player finishes their own glass!");
+      display.innerHTML = `WINNER!! YOUR PRIZE IS TO FINSH YOUR DRINK!!!`;
+
+      if (clickCount > pax) {
+        nextButton.addEventListener("click", window.location.reload());
+        clickCount = 0;
+      }
+    }
+  });
 }
 
 // Get the modal
@@ -45,17 +71,15 @@ start.addEventListener("click", function () {
 
 // Submit to close the modal
 submit.addEventListener("click", function () {
-  modal.style.display = "none";
-});
-
-// When the user clicks anywhere outside of the modal, close it
-window.addEventListener("click", function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  const paxNum = document.querySelector("#paxNum").value;
+  if (paxNum > 0) {
+    if (paxNum !== null) {
+      modal.style.display = "none";
+      document.querySelector(".game").style.display = "block";
+      start.style.display = "none";
+      setCards(paxNum);
+    }
+  } else {
+    window.alert("Please enter a valid number");
   }
 });
-
-setCards();
-
-const nextButton = document.querySelector("#next");
-nextButton.addEventListener("click", draw);
