@@ -1,0 +1,28 @@
+#card {
+  width: 200px;
+  height: 200px;
+  background: #0088cc;
+  margin: auto;
+  padding: 2%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#next {
+  position: absolute;
+  margin-left: -50px;
+  left: 50%;
+  width: 100px;
+  bottom: 0px;
+}
+
+#start {
+  position: absolute;
+  margin-left: 50px;
+  left: 50%;
+  width: 100px;
+  bottom: 0px;
+}
