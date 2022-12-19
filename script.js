@@ -24,5 +24,38 @@ function draw() {
   display.innerHTML = `${drawCard}`;
 }
 
+function setCards() {
+  const pax = document.querySelector("#paxNum").value;
+  console.log(pax);
+}
+
+// Get the modal
+const modal = document.querySelector("#myModal");
+
+// Start Button
+const start = document.querySelector("#start");
+
+// Submit button
+const submit = document.querySelector("#submit");
+
+// Call modal on start
+start.addEventListener("click", function () {
+  modal.style.display = "block";
+});
+
+// Submit to close the modal
+submit.addEventListener("click", function () {
+  modal.style.display = "none";
+});
+
+// When the user clicks anywhere outside of the modal, close it
+window.addEventListener("click", function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+});
+
+setCards();
+
 const nextButton = document.querySelector("#next");
 nextButton.addEventListener("click", draw);

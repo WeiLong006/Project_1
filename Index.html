@@ -8,10 +8,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Start button -->
+    <button id="start">Start</button>
+
+    <!-- Open Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <label>How many people are getting drunk?</label>
+        <input type="text" id="paxNum" />
+        <button id="submit">Submit</button>
+      </div>
+    </div>
+
+    <!-- Main Game Content -->
     <label id="card">card</label>
-    <div class = "btm">
-        <button id="start" class="btm">Start</button>
-        <button id="next" class="btm">Next card</button>
+    <div class="btm">
+      <button id="next" class="btm">Next card</button>
     </div>
     <script src="script.js" charset="utf-8"></script>
   </body>
