@@ -18,17 +18,17 @@ const cards = [
 
 //Rules deck
 const rules = [
-  "Pay a compliment to someone before you drink till the end of the game",
-  "No Swearing for the rest of the game",
-  "Swear every time you speak for the rest of the game",
-  "End every sentence you speak with that's what she said",
-  "Sing a song. Last person to join in, drinks",
-  "You have T-Rex arms for the rest of the game",
-  "Anyone who looks into your eyes for the rest of the game, drinks",
-  "You are now a train, you must sound your horn and say Choo-Choo! everytime you speak for the rest of the game",
-  "Pick a drinking buddy, Each time you drink, your buddy drinks with you",
+  "Pay compliments",
+  "No swearing",
+  "Swear every time",
+  "That's what she said",
+  "Sing a song",
+  "T-rex arms",
+  "See what see",
+  "Choo Choo",
+  "Drinking buddy",
   "Remove a rule",
-  "Make a rule",
+  "Create a rule",
 ];
 
 //Naughty deck
@@ -63,10 +63,36 @@ function setCards(numPax, basicSelect, rulesSelect, naughtySelect) {
     const display = document.querySelector("#card");
     const countDown = document.querySelector("#countDown");
     const mainImg = document.querySelector("#mainImg");
-    mainImg.src = `/Images/${random}/${drawCard}.png`;
-
-    //Display card
-    display.appendChild(mainImg);
+    if (clickCount < pax) {
+      if (basicSelect) {
+        if (random === 0) {
+          //Display card
+          mainImg.src = `/Images/0/${drawCard}.png`;
+          display.appendChild(mainImg);
+        }
+        if (random === 1) {
+          //Display card
+          mainImg.src = `/Images/1/${drawCard}.png`;
+          display.appendChild(mainImg);
+        }
+        // if (random === 2) {
+        //   //Display card
+        //   mainImg.src = `/Images/2/${drawCard}.png`;
+        //   display.appendChild(mainImg);
+        // }
+      } else if (rulesSelect) {
+        if (random === 0) {
+          //Display card
+          mainImg.src = `/Images/1/${drawCard}.png`;
+          display.appendChild(mainImg);
+        }
+        // if (random === 1){
+        // //Display card
+        // mainImg.src = `/Images/2/${drawCard}.png`;
+        // display.appendChild(mainImg);
+        // }
+      }
+    }
 
     //count down for both cards left and click count. Display cound down
     clickCount += 1;
@@ -75,11 +101,11 @@ function setCards(numPax, basicSelect, rulesSelect, naughtySelect) {
 
     // if click count hits max number of cards
     if (clickCount >= pax) {
-      const img = document.createElement("img");
+      // const img = document.createElement("img");
       const win = "Winner";
-      img.src = `/Images/${win}.png`;
+      mainImg.src = `/Images/${win}.png`;
       // img.src = "/Images/Winner.png";
-      display.appendChild(img);
+      display.appendChild(mainImg);
 
       // reload page and click count when player clicks next after the max cards have been played
       if (clickCount > pax) {
