@@ -3,13 +3,13 @@ const selected = [];
 
 //Basic Deck
 const cards = [
-  "Give 1 shots",
-  "Give 2 shots",
-  "Take 1 shot",
-  "Take 2 shots",
-  "Swap seats",
-  "Pick someone to pour you a drink",
-  "Never Have i ever",
+  "Give 1",
+  "Give 2",
+  "Take 1",
+  "Take 2",
+  "Swap",
+  "Pick one",
+  "Never have i ever",
   "Guys drink 1",
   "Guys drink 2",
   "Girls drink 1",
@@ -51,7 +51,7 @@ function setCards(numPax, basicSelect, rulesSelect, naughtySelect) {
   let clickCount = 0;
   const pax = numPax * 10;
   let countPax = pax;
-  console.log(basicSelect, rulesSelect, naughtySelect);
+  // console.log(basicSelect, rulesSelect, naughtySelect);
 
   //creating function for next button, calling the next card after next button is clicked
   const nextButton = document.querySelector("#next");
@@ -62,9 +62,11 @@ function setCards(numPax, basicSelect, rulesSelect, naughtySelect) {
     const drawCard = selected[random][totalCards];
     const display = document.querySelector("#card");
     const countDown = document.querySelector("#countDown");
+    const mainImg = document.querySelector("#mainImg");
+    mainImg.src = `/Images/${random}/${drawCard}.png`;
 
     //Display card
-    display.innerHTML = `${drawCard}`;
+    display.appendChild(mainImg);
 
     //count down for both cards left and click count. Display cound down
     clickCount += 1;
