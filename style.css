@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=ZCOOL+KuaiLe&display=swap");
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -19,6 +21,7 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  font-family: "ZCOOL KuaiLe", sans-serif;
 }
 
 /* The Close Button */
@@ -36,9 +39,48 @@
   cursor: pointer;
 }
 
+#body {
+  background-image: linear-gradient(to right, #380036, #0cbaba);
+}
+
 .game {
   display: none;
   width: 1000;
+}
+#header {
+  /* margin: 0 auto; */
+  margin-left: 25%;
+  position: absolute;
+  object-fit: fill;
+  max-height: 100%;
+  max-width: 50%;
+  font-size: xx-large;
+  text-align: center;
+  font-family: "ZCOOL KuaiLe", sans-serif;
+}
+
+#header2 {
+  margin: 0%;
+  top: 5%;
+  margin-left: 95px;
+  /* left: 49%; */
+  position: relative;
+  object-fit: contain;
+  height: 100%;
+  width: 50%;
+  font-size: xx-large;
+}
+
+#startPic {
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  object-fit: fill;
+  height: 70%;
+  width: 100%;
 }
 
 #mainImg {
@@ -47,25 +89,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  /* padding: 2%; */
   position: absolute;
-  object-fit: contain;
-  height: 100%;
-  width: 50%;
+  object-fit: fill;
+  height: 87%;
+  width: 100%;
 }
-
-/* #card {
-  width: 200px;
-  height: 200px;
-  background: #0088cc;
-  margin: auto;
-  padding: 2%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-} */
 
 #next {
   position: absolute;
@@ -73,6 +101,7 @@
   left: 50%;
   width: 100px;
   bottom: 0px;
+  height: 50px;
 }
 
 #start {
@@ -81,16 +110,23 @@
   left: 50%;
   width: 100px;
   bottom: 0px;
+  height: 50px;
 }
 
 #countDownLabel {
-  position: absolute;
+  position: relative;
   margin-left: -50px;
   left: 50%;
+  text-align: center;
+  color: white;
+  display: none;
 }
 
 #countDown {
-  position: absolute;
+  position: relative;
   margin-left: -60px;
   left: 57%;
+  text-align: center;
+  color: white;
+  display: none;
 }
