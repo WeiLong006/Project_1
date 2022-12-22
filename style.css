@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=ZCOOL+KuaiLe&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Indie+Flower&family=ZCOOL+KuaiLe&display=swap");
 
 /* The Modal (background) */
 .modal {
@@ -21,7 +21,7 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
-  font-family: "ZCOOL KuaiLe", sans-serif;
+  font-family: "Indie Flower", cursive;
 }
 
 /* The Close Button */
@@ -40,7 +40,7 @@
 }
 
 #body {
-  background-image: linear-gradient(to right, #380036, #0cbaba);
+  background-image: linear-gradient(to right, #b91372, #6b0f1a);
 }
 
 .game {
@@ -69,6 +69,7 @@
   height: 100%;
   width: 50%;
   font-size: xx-large;
+  font-family: "Abril Fatface", cursive;
 }
 
 #startPic {
