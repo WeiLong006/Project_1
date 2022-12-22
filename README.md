@@ -1,20 +1,21 @@
 # Project_1
 
-/////////////////////////////////
-//////////  WRECKED!  ///////////
-/////////////////////////////////
+# WRECKED!
 
+## Project description
 
-//Project description
 Wrecked is a card based drinking game played on mobile phone. Players will key in the number of players who are playing the game and select the categories they wish to play. The total number of cards will be 10 times the amount of players. Each player will then click on the next button when it is their turn to play and they will have to perform the insturctions of whatever card they have drawn. If a player fails to perform the instruction, the player will have to drink!
 
-//Technology used
+## Technology used
+
 I used Javascript,HTML and CSS for this project.
 
-//Features i hope to be able to implement in future
+## Features i hope to be able to implement in future
+
 I would like to add more decks and hopefully be able to customise the cards to the players' name.
 
-//Approach taken
+## Approach taken
+
 My first step was to create the base buttons and image tags required for the game. Once that was done, i went into Javascript to create the necessary functions to make have the game according to how i wanted it. I managed this by tpying out in the comments the various requirements needed. For example, //check if the input box value is valid and push the selected categories.
 
 I started with creating an array to fit the cards required for the program. Following which, was to allow the start button to call the modal and have the input value in the modal's input box to be checked and verified that it is not empty and the value is now below one as the requirement is to have at least one player. As the key component to the game is actually the next button, i created a function for all the necessary executions whenever the next button is clicked. Which includes, randoming the cards to be selected, displaying the selected card, a count down timer, a set final card that is drawn and to reload the game to the beginning once the user clicks the end button.
