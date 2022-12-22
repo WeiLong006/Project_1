@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Indie+Flower&family=ZCOOL+KuaiLe&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Covered+By+Your+Grace&family=Indie+Flower&display=swap");
 
 /* The Modal (background) */
 .modal {
@@ -56,7 +56,9 @@
   max-width: 50%;
   font-size: xx-large;
   text-align: center;
-  font-family: "ZCOOL KuaiLe", sans-serif;
+  font-family: "Covered By Your Grace", cursive;
+  color: #99ffdd;
+  text-shadow: 5px 5px #2e2011;
 }
 
 #header2 {
@@ -70,6 +72,8 @@
   width: 50%;
   font-size: xx-large;
   font-family: "Abril Fatface", cursive;
+  color: #e5c742;
+  text-shadow: 3px 3px #2e2011;
 }
 
 #startPic {
@@ -103,6 +107,15 @@
   width: 100px;
   bottom: 0px;
   height: 50px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px #f0e5e9;
 }
 
 #start {
@@ -112,6 +125,11 @@
   width: 100px;
   bottom: 0px;
   height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px #f0e5e9;
 }
 
 #countDownLabel {
