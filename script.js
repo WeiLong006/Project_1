@@ -18,32 +18,32 @@ const cards = [
 
 //Rules deck
 const rules = [
-  "/Images/Rules/Pay compliments.png",
-  "/Images/Rules/No swearing.png",
-  "/Images/Rules/Swear every time.png",
-  "/Images/Rules/That's what she said.png",
-  "/Images/Rules/Sing a song.png",
-  "/Images/Rules/T-rex arms.png",
-  "/Images/Rules/See what see.png",
-  "/Images/Rules/Choo Choo.png",
-  "/Images/Rules/Drinking buddy.png",
-  "/Images/Rules/Remove a rule.png",
-  "/Images/Rules/Create a rule.png",
+  "/Images/Rules/Pay_compliments.png",
+  "/Images/Rules/No_swearing.png",
+  "/Images/Rules/Swear_every_time.png",
+  "/Images/Rules/That's_what_she_said.png",
+  "/Images/Rules/Sing_a_song.png",
+  "/Images/Rules/T-rex_arms.png",
+  "/Images/Rules/See_what_see.png",
+  "/Images/Rules/Choo_Choo.png",
+  "/Images/Rules/Drinking_buddy.png",
+  "/Images/Rules/Remove_a_rule.png",
+  "/Images/Rules/Create_a_rule.png",
 ];
 
 //Naughty deck
 const naughty = [
-  "/Images/Naughty/Hold hands left.png",
-  "/Images/Naughty/Hold hands right.png",
-  "/Images/Naughty/Sit left.png",
-  "/Images/Naughty/Sit right.png",
+  "/Images/Naughty/Hold_hands_left.png",
+  "/Images/Naughty/Hold_hands_right.png",
+  "/Images/Naughty/Sit_left.png",
+  "/Images/Naughty/Sit_right.png",
   "/Images/Naughty/Massage.png",
-  "/Images/Naughty/Kiss left.png",
-  "/Images/Naughty/Kiss right.png",
-  "/Images/Naughty/Secret Admirer.png",
-  "/Images/Naughty/Shoot Shag Marry.png",
-  "/Images/Naughty/Whisper left.png",
-  "/Images/Naughty/Whisper right.png",
+  "/Images/Naughty/Kiss_left.png",
+  "/Images/Naughty/Kiss_right.png",
+  "/Images/Naughty/Secret_Admirer.png",
+  "/Images/Naughty/Shoot_Shag_Marry.png",
+  "/Images/Naughty/Whisper_left.png",
+  "/Images/Naughty/Whisper_right.png",
 ];
 
 //Singapore deck
