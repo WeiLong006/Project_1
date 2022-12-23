@@ -97,7 +97,7 @@ function setCards(numPax, basicSelect, rulesSelect, naughtySelect) {
     // if click count hits max number of cards to display winner image
     if (clickCount >= pax) {
       const win = "Winner";
-      mainImg.src = `/Images/${win}.png`;
+      mainImg.src = `/Images/${win}.PNG`;
       display.appendChild(mainImg);
       document.body.style.backgroundClip = "black";
       nextButton.innerText = "END!        ";
