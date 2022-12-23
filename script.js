@@ -3,17 +3,17 @@ const selected = [];
 
 //Basic Deck
 const cards = [
-  "Images/Basic/Give 1.png",
-  "Images/Basic/Give 2.png",
-  "Images/Basic/Take 1.png",
-  "Images/Basic/Take 2.png",
-  "Images/Basic/Swap.png",
-  "Images/Basic/Pick one.png",
-  "Images/Basic/Never have i ever.png",
-  "Images/Basic/Guys drink 1.png",
-  "Images/Basic/Guys drink 2.png",
-  "Images/Basic/Girls drink 1.png",
-  "Images/Basic/Girls drink 2.png",
+  "Images/Basic/Give_1.PNG",
+  "Images/Basic/Give_2.PNG",
+  "Images/Basic/Take_1.PNG",
+  "Images/Basic/Take_2.PNG",
+  "Images/Basic/Swap.PNG",
+  "Images/Basic/Pick_one.PNG",
+  "Images/Basic/Never_have_i_ever.PNG",
+  "Images/Basic/Guys_drink_1.PNG",
+  "Images/Basic/Guys_drink_2.PNG",
+  "Images/Basic/Girls_drink_1.PNG",
+  "Images/Basic/Girls_drink_2.PNG",
 ];
 
 //Rules deck
