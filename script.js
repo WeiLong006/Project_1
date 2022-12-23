@@ -18,32 +18,32 @@ const cards = [
 
 //Rules deck
 const rules = [
-  "/Images/Rules/Pay_compliments.png",
-  "/Images/Rules/No_swearing.png",
-  "/Images/Rules/Swear_every_time.png",
-  "/Images/Rules/That's_what_she_said.png",
-  "/Images/Rules/Sing_a_song.png",
-  "/Images/Rules/T-rex_arms.png",
-  "/Images/Rules/See_what_see.png",
-  "/Images/Rules/Choo_Choo.png",
-  "/Images/Rules/Drinking_buddy.png",
-  "/Images/Rules/Remove_a_rule.png",
-  "/Images/Rules/Create_a_rule.png",
+  "Images/Rules/Pay_compliments.PNG",
+  "Images/Rules/No_swearing.PNG",
+  "Images/Rules/Swear_every_time.PNG",
+  "Images/Rules/That's_what_she_said.PNG",
+  "Images/Rules/Sing_a_song.PNG",
+  "Images/Rules/T-rex_arms.PNG",
+  "Images/Rules/See_what_see.PNG",
+  "Images/Rules/Choo_Choo.PNG",
+  "Images/Rules/Drinking_buddy.PNG",
+  "Images/Rules/Remove_a_rule.PNG",
+  "Images/Rules/Create_a_rule.PNG",
 ];
 
 //Naughty deck
 const naughty = [
-  "/Images/Naughty/Hold_hands_left.png",
-  "/Images/Naughty/Hold_hands_right.png",
-  "/Images/Naughty/Sit_left.png",
-  "/Images/Naughty/Sit_right.png",
-  "/Images/Naughty/Massage.png",
-  "/Images/Naughty/Kiss_left.png",
-  "/Images/Naughty/Kiss_right.png",
-  "/Images/Naughty/Secret_Admirer.png",
-  "/Images/Naughty/Shoot_Shag_Marry.png",
-  "/Images/Naughty/Whisper_left.png",
-  "/Images/Naughty/Whisper_right.png",
+  "Images/Naughty/Hold_hands_left.PNG",
+  "Images/Naughty/Hold_hands_right.PNG",
+  "Images/Naughty/Sit_left.PNG",
+  "Images/Naughty/Sit_right.PNG",
+  "Images/Naughty/Massage.PNG",
+  "Images/Naughty/Kiss_left.PNG",
+  "Images/Naughty/Kiss_right.PNG",
+  "Images/Naughty/Secret_Admirer.PNG",
+  "Images/Naughty/Shoot_Shag_Marry.PNG",
+  "Images/Naughty/Whisper_left.PNG",
+  "Images/Naughty/Whisper_right.PNG",
 ];
 
 //Singapore deck
@@ -97,7 +97,7 @@ function setCards(numPax, basicSelect, rulesSelect, naughtySelect) {
     // if click count hits max number of cards to display winner image
     if (clickCount >= pax) {
       const win = "Winner";
-      mainImg.src = `/Images/${win}.PNG`;
+      mainImg.src = `Images/${win}.PNG`;
       display.appendChild(mainImg);
       document.body.style.backgroundClip = "black";
       nextButton.innerText = "END!        ";
